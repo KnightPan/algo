@@ -1,5 +1,11 @@
 package com.base.data_structure.array;
 
+/**
+ *  数组是一种线性表数据结构，它用一组联系的内存空间，来存储一组具有相同类型的数据
+ *  通过寻址来达到随机访问(连续内存空间+相同数据类型)
+ *  @author pjf
+ *
+ */
 public class Array {
 
 	private int[] data;
@@ -19,6 +25,10 @@ public class Array {
 		this.capacity = capacity;
 		this.data = new int[capacity];
 		this.size = 0;
+	}
+	
+	public int length() {
+		return size;
 	}
 	
 	public int find(int index) {
